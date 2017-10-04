@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="TestingDemo" parallel="tests" verbose="2">
+<listeners>
+      <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+      <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>
+
+
+  <test name="Testing on firefox">
+  <parameter name="browser" value= "firefox"></parameter>
+  <parameter name="baseURL" value="http://www.shine.com/"></parameter>
+  <parameter name="value1" value="val1"></parameter>
+<parameter name="excelLoc" value="C:\\Users\\hp\\workspace\\SeleniumProj\\resource\\sample.xls"></parameter>
+<parameter name ="sheetName" value="Sheet1"></parameter>
+    <classes>
+      <class name="test2.TestBatch1"/>
+    </classes>
+  </test> <!-- Test -->
+  
+<!--   <test name="Testing on chrome">
+  <parameter name="browser" value= "chrome"></parameter>
+  <parameter name="baseURL" value="https://www.google.com"></parameter>
+    <classes>
+      <class name="test2.TestBatch1"/>
+    </classes>
+  </test>  -->
+  
+</suite> <!-- Suite -->
